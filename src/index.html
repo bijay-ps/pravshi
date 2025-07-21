@@ -8,9 +8,9 @@
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
   </head>
   <body>
-    <main>
+    <main class="mb-1">
       <header
-        class="text-zinc-200 sticky top-0 flex flex-col md:flex-row justify-around items-center gap-4 bg-gradient-to-b md:bg-gradient-to-r from-royal-I to-pink-500"
+        class="text-zinc-200 sticky top-0 flex flex-col md:flex-row justify-between items-center gap-4 bg-gradient-to-b md:bg-gradient-to-r from-rose-500 to-pink-500"
       >
         <div class="flex items-center p-2 gap-2">
           <img
@@ -21,37 +21,21 @@
           />
           <div class="flex flex-col leading-tight">
             <span class="text-xl md:text-3xl font-bold font-dynapuff"
-              >Pravshi <span class="text-pink-500">Cakes</span></span
+              >Pravshi <span class="text-royal-I">Cakes</span></span
             >
             <span class="text-sm font-light text-white tracking-wide"
               >Fresh eggless cakes</span
             >
           </div>
         </div>
-        <div
-          class="flex items-center justify-end gap-2 p-2 text-sm md:text-2xl"
-        >
-          <span>
-            <img
-              src="./assets/images/phone-call.png"
-              alt="Phone icons"
-              class="w-7 md:w-10 self-start mt-1"
-            />
-          </span>
-          <i>or</i>
-          <span>
-            <img
-              src="./assets/images/whatsapp.png"
-              alt="whatsapp icon"
-              class="w-7 md:w-10 self-start mt-1"
-            />
-          </span>
+        <div class="flex items-center justify-end gap-2 p-2 text-xl">
+          <span> Order at </span>
           <a href="tel:+919176001825">+91 9176 00 1825</a>
         </div>
-        <div class="flex items-center gap-2 p-2">
+        <div class="flex items-center gap-2 p-2 right-0">
           <a href="https://www.instagram.com/pravshi_cakes/" target="_blank">
             <img
-              src="./assets/images/instagram.png"
+              src="./assets/images/insta_white.png"
               alt="instagram icon"
               width="30"
             />
@@ -62,16 +46,47 @@
             rel="noopener noreferrer"
           >
             <img
-              src="./assets/images/google.png"
+              src="./assets/images/google_white.png"
               alt="Google link"
-              width="30"
+              width="28"
             />
           </a>
         </div>
       </header>
-      <div
-        class="h-[calc(100vh-100px)] min-h-[400px] bg-[linear-gradient(rgba(82,53,123,.4),rgba(82,53,123,.4)),url('/src/assets/images/cake_bg.JPEG')] bg-center bg-cover"
-      ></div>
+      <!-- <div
+        class="flex h-[calc(100vh-100px)] min-h-[400px] bg-[linear-gradient(rgba(82,53,123,.4),rgba(82,53,123,.4)),url('/src/assets/images/cake_bg.JPEG')] bg-center bg-cover"
+      ></div> -->
+      <div class="flex flex-col md:flex-row">
+        <img
+          src="./assets/images/chef.JPEG"
+          alt="cupcake logo, Dessert icons created by Freepik - Flaticon"
+          class="self-start"
+          width="700"
+        />
+        <div class="font-quicksand tracking-[.2rem]">
+          <div
+            class="flex flex-col grow items-center p-5 md:p-20 justify-center"
+          >
+            <p
+              class="font-roboto text-sm md:text-3xl underline tracking-[.25em] mb-5"
+            >
+              Meet the Chef
+            </p>
+            <div class="text-sm md:text-2xl leading-10">
+              Hello, I’m <strong><em>Preeti</em></strong
+              >from <strong>Pravshi Cakes</strong> a passionate baking
+              artist!🍰🧁🍩. <br />
+              I specialize in creating 100% eggless delightful cakes, cupcakes,
+              brownie, teacakes, customize cakes and donuts—all made with love
+              and creativity. From desi treats to classic favorites, I offer a
+              wide variety that’s not only stress-free to order but also
+              absolutely delicious!
+              <br />Each bite promises great taste, quality, and satisfaction.
+              ✨ Highly recommended by everyone who tries it!
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -3,6 +3,9 @@
 @import "tailwindcss";
 
 @theme {
+  --color-chocolate-brown-dark: #391d12;
+  --color-chocolate-brown: #542507;
+  --color-chocolate-white: #f2f2f2;
   --color-royal-I: #52357b;
   --font-quicksand: "Quicksand", sans-serif;
   --font-dynapuff: "DynaPuff", system-ui;
@@ -13,5 +16,36 @@
 @layer {
   body {
     font-family: var(--font-quicksand);
+  }
+}
+
+@layer components {
+  .changecontent::after {
+    content: " ";
+    color: var(--color-orange-500);
+    font-weight: bold;
+    font-family: var(--font-dynapuff);
+    animation: changetext 10s infinite linear;
+  }
+
+  @keyframes changetext {
+    0% {
+      content: "Birthday cakes";
+    }
+    20% {
+      content: "Chocolate cakes";
+    }
+    50% {
+      content: "Customized cakes";
+    }
+    60% {
+      content: "Tea cakes";
+    }
+    80% {
+      content: "Donuts";
+    }
+    100% {
+      content: "Brownies";
+    }
   }
 }
